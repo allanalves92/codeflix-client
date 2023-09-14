@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Banner } from './components/Banner'
 import Header from './components/Header'
+import { MovieRow } from './components/MovieRow'
 
 export default function Home() {
   return (
@@ -8,7 +9,10 @@ export default function Home() {
       <Header />
       <main className='relative h-screen mb-48 pl-4 lg:pl-16 '>
         <Banner />
+        <MovieRow sectionTitle='Popular' />
+        <MovieRow sectionTitle='Trending' />
+        <MovieRow sectionTitle='Top Rated' />
       </main>
     </div>
-  )
+  );
 }
